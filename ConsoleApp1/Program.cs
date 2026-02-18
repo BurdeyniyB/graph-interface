@@ -1,9 +1,16 @@
-﻿/// <summary>
-/// Головна точка входу в програму.
-/// </summary>
-/// <remarks>
-/// Цей код виводить вітальне повідомлення в консоль.
-/// </remarks>
+﻿public class Hello
+{
+    public void SayHello()
+    {
+        Console.WriteLine("Hello, World from Hello class!");
+    }
+}
 
-// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+class Program
+{
+    static void Main()
+    {
+        Hello hello = new Hello();
+        hello.SayHello();
+    }
+}
